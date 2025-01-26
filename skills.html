@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My portfolio</title>
+  
+  <link rel="stylesheet" href="css/output.css">
+</head>
+<body class="bg-gray-100">
+  <header class="bg-black text-white py-4">
+    <div class="container ml-0 md:mx-auto flex justify-between items-center px-6">
+      <nav class="w-full hidden md:block">
+        <ul class="flex justify-between">
+          <li><a href="index.html" class="hover:underline">My portfolio</a></li>
+          <li><a href="skills.html" class="hover:underline">Skills</a></li>
+          <li><a href="projects.html" class="hover:underline">Projects</a></li>
+          <li><a href="about-me.html" class="hover:underline">About me</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Przycisk otwierający menu na mobile -->
+      <button id="menu-toggle" class="md:hidden flex items-center content-center text-xl">
+        <div class="menu-icon mr-6"></div>
+
+        <div class="text-2xl">
+          Skills
+        </div>
+      </button>
+    </div>
+  </header>
+
+  <!-- Drawer - mobilne menu -->
+  <div id="drawer" class="fixed inset-0 bg-black text-white w-64 h-full transform -translate-x-full transition-transform duration-300 md:hidden">
+      <button id="close-menu" class="absolute top-4 left-6 flex items-center content-center">
+        <div class="close-icon mr-6"></div>
+
+        <div class="text-2xl">
+          Skills
+        </div>
+      </button>
+      <nav class="mt-16 text-2xl">
+        <a href="index.html" class="flex items-center content-center hover:underline py-3 px-6">
+          <div class="home-icon mr-6"></div>
+          My portfolio
+        </a>
+        <a href="skills.html" class="flex items-center content-center hover:underline py-3 px-6">
+          <div class="skills-icon mr-6"></div>
+          Skills
+        </a>
+        <a href="projects.html" class="flex items-center content-center hover:underline py-3 px-6">
+          <div class="projects-icon mr-6"></div>
+          Projects
+        </a>
+        <a href="about-me.html" class="flex items-center content-center hover:underline py-3 px-6">
+          <div class="about-me-icon mr-6"></div>
+          About me
+        </a>
+        <a href="contact.html" class="flex items-center content-center hover:underline py-3 px-6">
+          <div class="contact-icon mr-6"></div>
+          Contact
+        </a>
+      </nav>
+
+      <!-- Stopka wewnątrz menu mobilnego -->
+      <footer class="absolute bottom-4 left-0 border-t-1 py-3 px-6">
+        <div>
+          Copyright © 2024 Hubert&nbsp;Bartocha
+        </div>
+      </footer>
+  </div>
+
+  <main class="container mx-auto md:mt-10 mt-6 mb-6 px-4">
+    
+    <section class="mx-auto md:py-12 grid grid-cols-1 md:grid-cols-[1fr_1px_1fr] md:gap-24 gap-6">
+        <section>
+            <h2 class="text-4xl md:text-3xl font-normal uppercase tracking-[2px] text-gray-900 text-left">Skills</h2>
+
+            <section class="grid grid-cols-[1fr_1fr] lg:grid-cols-[1fr_1fr_1fr] gap-10 gap-y-4 mt-3">
+                <section class="flex items-center content-center gap-3">
+                    <section class="icon-container bg-[#E34C26] rounded-xl flex items-center justify-center">
+                        <section class="html-icon"></section>
+                    </section>
+                    <section class="leading-[1.4]">
+                        <section>HTML</section>
+                        <section class="text-[12px] text-[#8C8C96]">Expert</section>
+                    </section>
+                </section>
+
+                <section class="flex items-center content-center gap-3">
+                    <section class="icon-container bg-[#264DE4] rounded-xl flex items-center justify-center">
+                        <section class="css-icon"></section>
+                    </section>
+                    <section class="leading-[1.4]">
+                        <section>CSS</section>
+                        <section class="text-[12px] text-[#8C8C96]">Expert</section>
+                    </section>
+                </section>
+
+                <section class="flex items-center content-center gap-3">
+                    <section class="icon-container bg-[#F0DB4F] rounded-xl flex items-center justify-center">
+                        <section class="js-icon"></section>
+                    </section>
+                    <section class="leading-[1.4]">
+                        <section>JavaScript</section>
+                        <section class="text-[12px] text-[#8C8C96]">Expert</section>
+                    </section>
+                </section>
+
+                <section class="flex items-center content-center gap-3">
+                    <section class="icon-container bg-white border-[3px] border-[#EDF1EE] rounded-xl flex items-center justify-center">
+                        <section class="git-icon"></section>
+                    </section>
+                    <section class="leading-[1.4]">
+                        <section>Git</section>
+                        <section class="text-[12px] text-[#8C8C96]">Expert</section>
+                    </section>
+                </section>
+
+                <section class="flex items-center content-center gap-3">
+                    <section class="icon-container bg-[#049CEC] rounded-xl flex items-center justify-center">
+                        <section class="docker-icon"></section>
+                    </section>
+                    <section class="leading-[1.4]">
+                        <section>Docker</section>
+                        <section class="text-[12px] text-[#8C8C96]">Expert</section>
+                    </section>
+                </section>
+            </section>
+        </section>
+    
+        <!-- Linia pionowa - desktop -->
+        <section class="bg-black md:w-px md:h-full w-full h-px"></section>
+    
+        <section>
+            <h2 class="text-4xl md:text-3xl font-normal uppercase tracking-[2px] text-gray-900 text-left">Experience</h2>
+
+            <section class="grid grid-cols-1 gap-10 gap-y-4 mt-3">
+                <section class="grid grid-cols-[43px_1fr] gap-3">
+                    <section class="icon-container bg-white border-[3px] border-[#EDF1EE] rounded-xl flex items-center justify-center">
+                        <section class="meta-icon"></section>
+                    </section>
+                    <section class="leading-[1.4]">
+                        <section>Product Designer — Meta</section>
+                        <section class="text-[12px] text-[#8C8C96]">Jun 2022 — Nov 2024</section>
+                        <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque  finibus urna libero, imperdiet tincidunt mi facilisis non. Integer  dignissim semper vehicula. Aenean rhoncus in ligula id pulvinar.</section>
+                    </section>
+                </section>
+
+                <section class="grid grid-cols-[43px_1fr] gap-3">
+                    <section class="icon-container bg-white border-[3px] border-[#EDF1EE] rounded-xl flex items-center justify-center">
+                        <section class="magento-icon"></section>
+                    </section>
+                    <section class="leading-[1.4]">
+                        <section>Product Designer — Magento</section>
+                        <section class="text-[12px] text-[#8C8C96]">Aug 2020 — Jun 2022</section>
+                        <section>Integer  dignissim semper vehicula. Aenean rhoncus in ligula id pulvinar.</section>
+                    </section>
+                </section>
+
+                <section class="grid grid-cols-[43px_1fr] gap-3">
+                    <section class="icon-container bg-white border-[3px] border-[#EDF1EE] rounded-xl flex items-center justify-center">
+                        <section class="web-designer-icon"></section>
+                    </section>
+                    <section class="leading-[1.4]">
+                        <section>Freelance Web Designer</section>
+                        <section class="text-[12px] text-[#8C8C96]">Sep 2015 — Aug 2019</section>
+                        <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque  finibus urna libero, imperdiet tincidunt mi facilisis non. </section>
+                    </section>
+                </section>
+            </section>
+
+            <hr class="my-5">
+
+            <h2 class="text-4xl md:text-3xl font-normal uppercase tracking-[2px] text-gray-900 text-left">Experience</h2>
+
+            <section class="leading-[1.4] mt-5">
+                <section>BEng in Software Engineering</section>
+                <section class="text-[12px] text-[#8C8C96]">Warsaw University of Technology / Oct 2020 — Jul 2024</section>
+            </section>
+
+            <section class="leading-[1.4] mt-5">
+                <section>Applied Computer Science</section>
+                <section class="text-[12px] text-[#8C8C96]">Jagiellonian University / Oct 2019 — Jun 2023</section>
+            </section>
+
+        </section>
+    </section>
+    
+
+    <!-- Przycisk -->
+    <a href="projects.html" class="md:mt-6 mt-8 px-6 py-3 bg-black text-white rounded-lg flex items-center gap-2 shadow-md hover:bg-gray-800 mx-auto md:mx-0 md:max-w-max justify-center justify-self-center">
+        <div class="projects-icon"></div>
+        <div>Check out my projects</div>
+        <div class="projects-icon"></div>
+      </a>
+  </main>
+
+  <footer class="hidden md:block bg-black p-4 text-white text-center">
+    Copyright © 2024 Hubert Bartocha
+  </footer>
+
+  <script src="js/main.js" defer>
+  </script>
+
+</body>
+</html>

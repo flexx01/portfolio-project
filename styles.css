@@ -1,0 +1,334 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Icons */
+
+.menu-icon {
+    background-image: url(../assets/img/menu-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 24px;
+    width: 24px;
+}
+
+.home-icon {
+    background-image: url(../assets/img/home-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 20px;
+    width: 20px;
+}
+
+.close-icon {
+    background-image: url(../assets/img/close-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 20px;
+    width: 20px;
+}
+
+.skills-icon, .opening-tag-icon {
+    background-image: url(../assets/img/opening-tag-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 20px;
+    width: 20px;
+}
+
+.projects-icon {
+    background-image: url(../assets/img/article-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 18px;
+    width: 18px;
+}
+
+.about-me-icon {
+    background-image: url(../assets/img/account_box-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 18px;
+    width: 18px;
+}
+
+.contact-icon {
+    background-image: url(../assets/img/call-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 18px;
+    width: 18px;
+}
+
+.closing-tag-icon {
+    background-image: url(../assets/img/closing-tag-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 20px;
+    width: 20px;
+}
+
+.preview-icon {
+    background-image: url(../assets/img/link-preview-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 15px;
+    width: 15px;
+}
+
+.github-icon {
+    background-image: url(../assets/img/view-code-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 20px;
+    width: 20px;
+}
+
+.web-dev-icon {
+    background-image: url(../assets/img/web-dev-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 20px;
+    width: 20px;
+}
+
+.camera-icon {
+    background-image: url(../assets/img/camera-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 20px;
+    width: 18px;
+}
+
+.ui-ux-icon {
+    background-image: url(../assets/img/ui-ux-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 18px;
+    width: 18px;
+}
+
+.mentorship-icon {
+    background-image: url(../assets/img/mentorship-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 30px;
+    width: 24px;
+}
+
+.html-icon {
+    background-image: url(../assets/img/html-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 26px;
+    width: 28px;
+}
+
+.css-icon {
+    background-image: url(../assets/img/css-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 26px;
+    width: 28px;
+}
+
+.js-icon {
+    background-image: url(../assets/img/js-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 28px;
+    width: 30px;
+}
+
+.git-icon {
+    background-image: url(../assets/img/git-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 28px;
+    width: 30px;
+}
+
+.docker-icon {
+    background-image: url(../assets/img/docker-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 28px;
+    width: 30px;
+}
+
+.meta-icon {
+    background-image: url(../assets/img/meta-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 22px;
+    width: 22px;
+}
+
+.magento-icon {
+    background-image: url(../assets/img/magento-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 22px;
+    width: 22px;
+}
+
+.web-designer-icon {
+    background-image: url(../assets/img/web-designer-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 22px;
+    width: 22px;
+}
+
+.discord-icon {
+    background-image: url(../assets/img/discord-social-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 27px;
+    width: 28px;
+}
+
+.fb-icon {
+    background-image: url(../assets/img/fb-social-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 27px;
+    width: 27px;
+}
+
+.github-icon {
+    background-image: url(../assets/img/github-social-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 27px;
+    width: 27px;
+}
+
+.linkedin-icon {
+    background-image: url(../assets/img/linkedin-social-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 27px;
+    width: 27px;
+}
+
+/* Custom styles */
+
+#drawer nav a:not(:first-of-type) {
+    border-top: 1px solid #1C1B1F;
+}
+
+#drawer footer {
+    border-top: 1px solid #1C1B1F;
+}
+
+main .profile-picture {
+    max-width: 100%;
+}
+
+main .project-container:nth-child(1) .project-image {
+    background: #664E4E;
+}
+
+main .project-container:nth-child(2) .project-image {
+    background: #5C0F0F;
+}
+
+main .project-container:nth-child(3) .project-image {
+    background: #C32F2F;
+}
+
+.project-description {
+    color: #666;
+}
+
+.about-me-skill:nth-child(1) {
+    background-color: #FDB24F;
+}
+
+.about-me-skill:nth-child(2) {
+    background-color: #509EEB;
+}
+
+.about-me-skill:nth-child(3) {
+    background-color: #31E0D8;
+}
+
+.about-me-skill:nth-child(4) {
+    background-color: #A4F631;
+}
+
+.icon-container {
+    width: 43px;
+    height: 43px;
+}
+
+/* Media queries */
+
+@media(min-height: 750px) {
+    main.container {
+        height: calc(100vh - 56px - 64px - 56px);
+    }
+
+    main .profile-picture {
+        max-height: calc(100vh - 56px - 2.5rem - 56px - 6rem);
+    }
+}

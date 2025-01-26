@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My portfolio</title>
+  
+  <link rel="stylesheet" href="css/output.css">
+</head>
+<body class="bg-gray-100">
+  <header class="bg-black text-white py-4">
+    <div class="container ml-0 md:mx-auto flex justify-between items-center px-6">
+      <nav class="w-full hidden md:block">
+        <ul class="flex justify-between">
+          <li><a href="index.html" class="hover:underline">My portfolio</a></li>
+          <li><a href="skills.html" class="hover:underline">Skills</a></li>
+          <li><a href="projects.html" class="hover:underline">Projects</a></li>
+          <li><a href="about-me.html" class="hover:underline">About me</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Przycisk otwierający menu na mobile -->
+      <button id="menu-toggle" class="md:hidden flex items-center content-center text-xl">
+        <div class="menu-icon mr-6"></div>
+
+        <div class="text-2xl">
+          My portfolio
+        </div>
+      </button>
+    </div>
+  </header>
+
+  <!-- Drawer - mobilne menu -->
+  <div id="drawer" class="fixed inset-0 bg-black text-white w-64 h-full transform -translate-x-full transition-transform duration-300 md:hidden">
+      <button id="close-menu" class="absolute top-4 left-6 flex items-center content-center">
+        <div class="close-icon mr-6"></div>
+
+        <div class="text-2xl">
+          My portfolio
+        </div>
+      </button>
+      <nav class="mt-16 text-2xl">
+        <a href="index.html" class="flex items-center content-center hover:underline py-3 px-6">
+          <div class="home-icon mr-6"></div>
+          My portfolio
+        </a>
+        <a href="skills.html" class="flex items-center content-center hover:underline py-3 px-6">
+          <div class="skills-icon mr-6"></div>
+          Skills
+        </a>
+        <a href="projects.html" class="flex items-center content-center hover:underline py-3 px-6">
+          <div class="projects-icon mr-6"></div>
+          Projects
+        </a>
+        <a href="about-me.html" class="flex items-center content-center hover:underline py-3 px-6">
+          <div class="about-me-icon mr-6"></div>
+          About me
+        </a>
+        <a href="contact.html" class="flex items-center content-center hover:underline py-3 px-6">
+          <div class="contact-icon mr-6"></div>
+          Contact
+        </a>
+      </nav>
+
+      <!-- Stopka wewnątrz menu mobilnego -->
+      <footer class="absolute bottom-4 left-0 border-t-1 py-3 px-6">
+        <div>
+          Copyright © 2024 Hubert&nbsp;Bartocha
+        </div>
+      </footer>
+  </div>
+
+  <main class="container mx-auto md:mt-10 mt-6 mb-6 px-4">
+    <section class="mx-auto md:py-12 grid grid-cols-1 md:grid-cols-2 gap-10">
+
+      <!-- prawa kolumna - zdjęcie desktopowe -->
+      <div class="hidden md:flex justify-center md:order-2 px-30">
+          <img src="assets/img/stock-photo.jpeg" alt="Profile Picture"
+               class="profile-picture h-auto rounded-2xl shadow-lg object-cover max-w-96">
+      </div>
+
+      <!-- Lewa kolumna - tekst -->
+      <div class="text-center md:text-left">
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900">Hi, I'm Joe Doe</h1>
+          <p class="text-gray-600 mt-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec diam id orci bibendum posuere.
+              Quisque sit amet vehicula risus. Vivamus varius lacus magna, ac varius dolor elementum in.
+          </p>
+
+          <!-- Zdjęcie portfolio - mobilna wersja -->
+          <div class="flex md:hidden justify-center md:order-2 px-30 mt-6">
+            <img src="assets/img/stock-photo.jpeg" alt="Profile Picture"
+                 class="profile-picture h-auto rounded-2xl shadow-lg object-cover max-w-96">
+          </div>
+          
+          <!-- Przycisk -->
+          <a href="skills.html" class="md:mt-6 mt-8 px-6 py-3 bg-black text-white rounded-lg flex items-center gap-2 shadow-md hover:bg-gray-800 mx-auto md:mx-0 md:max-w-max justify-center">
+            <div class="opening-tag-icon"></div>
+            <div>Check out my skills</div>
+            <div class="closing-tag-icon"></div>
+          </a>
+
+          <!-- Statystyki -->
+          <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-1 mb-6">
+              <div class="bg-black text-white p-4 text-center shadow-md rounded-tl rounded-bl">
+                  <p class="text-2xl font-bold">15 Y.</p>
+                  <p class="text-sm">Experience</p>
+              </div>
+              <div class="bg-black text-white p-4 text-center shadow-md">
+                  <p class="text-2xl font-bold">20+</p>
+                  <p class="text-sm">Project Completed</p>
+              </div>
+              <div class="bg-black text-white p-4 text-center shadow-md rounded-tr rounded-br">
+                  <p class="text-2xl font-bold">30</p>
+                  <p class="text-sm">Happy Client</p>
+              </div>
+          </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="hidden md:block bg-black p-4 text-white text-center">
+    Copyright © 2024 Hubert Bartocha
+  </footer>
+
+  <script src="js/main.js" defer></script>
+
+</body>
+</html>

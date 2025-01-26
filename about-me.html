@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My portfolio</title>
+  
+  <link rel="stylesheet" href="css/output.css">
+</head>
+<body class="bg-gray-100">
+  <header class="bg-black text-white py-4">
+    <div class="container ml-0 md:mx-auto flex justify-between items-center px-6">
+      <nav class="w-full hidden md:block">
+        <ul class="flex justify-between">
+          <li><a href="index.html" class="hover:underline">My portfolio</a></li>
+          <li><a href="skills.html" class="hover:underline">Skills</a></li>
+          <li><a href="projects.html" class="hover:underline">Projects</a></li>
+          <li><a href="about-me.html" class="hover:underline">About me</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Przycisk otwierający menu na mobile -->
+      <button id="menu-toggle" class="md:hidden flex items-center content-center text-xl">
+        <div class="menu-icon mr-6"></div>
+
+        <div class="text-2xl">
+          About me
+        </div>
+      </button>
+    </div>
+  </header>
+
+  <!-- Drawer - mobilne menu -->
+  <div id="drawer" class="fixed inset-0 bg-black text-white w-64 h-full transform -translate-x-full transition-transform duration-300 md:hidden">
+      <button id="close-menu" class="absolute top-4 left-6 flex items-center content-center">
+        <div class="close-icon mr-6"></div>
+
+        <div class="text-2xl">
+          About me
+        </div>
+      </button>
+      <nav class="mt-16 text-2xl">
+        <a href="index.html" class="flex items-center content-center hover:underline py-3 px-6">
+          <div class="home-icon mr-6"></div>
+          My portfolio
+        </a>
+        <a href="skills.html" class="flex items-center content-center hover:underline py-3 px-6">
+          <div class="skills-icon mr-6"></div>
+          Skills
+        </a>
+        <a href="projects.html" class="flex items-center content-center hover:underline py-3 px-6">
+          <div class="projects-icon mr-6"></div>
+          Projects
+        </a>
+        <a href="about-me.html" class="flex items-center content-center hover:underline py-3 px-6">
+          <div class="about-me-icon mr-6"></div>
+          About me
+        </a>
+        <a href="contact.html" class="flex items-center content-center hover:underline py-3 px-6">
+          <div class="contact-icon mr-6"></div>
+          Contact
+        </a>
+      </nav>
+
+      <!-- Stopka wewnątrz menu mobilnego -->
+      <footer class="absolute bottom-4 left-0 border-t-1 py-3 px-6">
+        <div>
+          Copyright © 2024 Hubert&nbsp;Bartocha
+        </div>
+      </footer>
+  </div>
+
+  <main class="container mx-auto md:mt-10 mt-6 mb-6 px-4">
+    <section class="mx-auto md:py-12 grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+      <!-- Lewa kolumna - tekst -->
+      <div class="text-center md:text-left md:order-2">
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900">ABOUT ME</h1>
+          <p class="text-gray-600 mt-4">
+            Hello there!<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dolor velit, lobortis pretium diam ut, pulvinar efficitur neque. Cras quis facilisis nisi. Nulla non fringilla mauris, quis accumsan diam.
+          </p>
+
+          <!-- Zdjęcie portfolio - mobilna wersja -->
+          <div class="flex lg:hidden justify-center md:order-2 px-30 mt-6">
+            <img src="assets/img/stock-photo.jpeg" alt="Profile Picture"
+                 class="profile-picture h-auto rounded-2xl shadow-lg object-cover max-w-96">
+          </div>
+
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-9">What I do?</h2>
+
+          <section class="about-me-list mt-7 grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 mt-6 gap-7">
+            <section class="about-me-skill p-6 rounded-3xl">
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-900 flex items-center content-center gap-3">
+                    <div class="web-dev-icon"></div>
+                    Web Development
+                </h3>
+
+                <section class="font-light mt-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dolor velit, lobortis pretium diam ut, pulvinar efficitur neque. Cras quis facilisis nisi.      
+                </section>
+            </section>
+
+            <section class="about-me-skill p-6 rounded-3xl">
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-900 flex items-center content-center gap-3">
+                    <div class="camera-icon"></div>
+                    App Development
+                </h3>
+
+                <section class="font-light mt-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dolor velit, lobortis pretium diam ut, pulvinar efficitur neque. Cras quis facilisis nisi.      
+                </section>
+            </section>
+
+            <section class="about-me-skill p-6 rounded-3xl">
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-900 flex items-center content-center gap-3">
+                    <div class="ui-ux-icon"></div>
+                    UI/UX Designing
+                </h3>
+
+                <section class="font-light mt-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dolor velit, lobortis pretium diam ut, pulvinar efficitur neque. Cras quis facilisis nisi.      
+                </section>
+            </section>
+
+            <section class="about-me-skill p-6 rounded-3xl">
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-900 flex items-center content-center gap-3">
+                    <div class="mentorship-icon"></div>
+                    Mentorship
+                </h3>
+
+                <section class="font-light mt-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dolor velit, lobortis pretium diam ut, pulvinar efficitur neque. Cras quis facilisis nisi.      
+                </section>
+            </section>
+          </section>
+      </div>
+
+      <!-- prawa kolumna - zdjęcie desktopowe -->
+      <div class="hidden lg:flex justify-center px-30">
+        <img src="assets/img/stock-photo.jpeg" alt="Profile Picture"
+             class="profile-picture h-auto rounded-2xl shadow-lg object-cover max-w-96">
+    </div>
+
+    </section>
+  </main>
+
+  <footer class="hidden md:block bg-black p-4 text-white text-center">
+    Copyright © 2024 Hubert Bartocha
+  </footer>
+
+  <script src="js/main.js" defer></script>
+
+</body>
+</html>
